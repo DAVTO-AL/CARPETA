@@ -1,10 +1,11 @@
 vocales="aeiouAEIOU"
 p=input()
-new_p="." if p[0] not in vocales else ""
+p=p.lower()
+p1=""
+p2=""
 for i in p:
-    if i in vocales:
-        new_p+="."
-    else:
-        new_p+=i
-print(new_p)
-    
+    if i not in vocales:
+        p1+=i
+for i in p1:
+    p2+="."+i
+print(p2)
